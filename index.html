@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip calculator</title>
+</head>
+<body>
+    <h2>Tip calculator</h1><br><br>
+
+    <form action="">
+        <div id='billingAmountDiv'>
+            <label for="billingAmountInput">How much was the bill?: </label><br>
+            <input type="number" id="billingAmountInput"><br><br>
+        </div>
+
+        <p>How was the service?</p>
+        <select id="serviceQualityDiv">
+            <option value="excelentServiceQuality">30% - Excelent</option>
+            <option value="greatServiceQuality">20% - Great</option>
+            <option value="goodServiceQuality">10% - Good</option>
+            <option value="badServiceQuality">0% - Bad</option>
+        </select><br><br>
+
+        <div id='peopleSharingBillDiv'>
+            <label for="peopleSharingBillInput">How many people are sharing the bill?</label><br>
+            <input type="number" id="peopleSharingBillInput"><br><br>
+        </div>
+
+        <div id="tipResultsDiv">
+            <h3>Total tip: <span id="totalTipSpan">0.00</span></h3>
+            <h3>Per person tip: <span id="perPersonTip">0.00</span></h3>
+        </div>
+    </form>
+    <script src="scripts.js"></script>
+</body>
+</html>
